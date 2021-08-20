@@ -27,22 +27,22 @@
                     <!-- Memory Specification -->
                     <div class="mt-5 mb-5">
                     <h4>Memory</h4>
-                    <button class="btn btn-outline-dark">8GB unified memory</button>
-                    <button class="btn btn-outline-dark">16GB unified memory</button>
+                    <button onclick="addOn('memory', 0)"  class="btn btn-outline-dark">8GB unified memory</button>
+                    <button onclick="addOn('memory', 180)" class="btn btn-outline-dark">16GB unified memory</button>
                     </div>
     
                     <!-- Storage Specification -->
                     <div class="mb-5">
                     <h4>Storage</h4>
-                    <button class="btn btn-outline-dark">256GB SSD storage</button>
-                    <button class="btn btn-outline-dark">512GB SSD storage</button>
-                    <button class="btn btn-outline-dark">1TB SSD storage</button>
+                    <button onclick="addOn('ssd', 0)" 0" class="btn btn-outline-dark">256GB SSD storage</button>
+                    <button onclick="addOn('ssd', 100)" class="btn btn-outline-dark">512GB SSD storage</button>
+                    <button onclick="addOn('ssd', 180)" class="btn btn-outline-dark">1TB SSD storage</button>
                     </div>
                     <!-- Delivery Option -->
                    <div>
                     <h4>Choose your delivery option</h4>
-                    <button class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
+                    <button onclick="addOn('delivery', 0)" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button  onclick="addOn('delivery', 20)"  id="express-delivery" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
                    </div>
     
                    <!-- Total Calculation -->
@@ -51,24 +51,24 @@
                        <tbody>
                            <tr>
                                <th scope= "row">Best Price</th>
-                               <td class="fw-bold">$<span>1299</span> </td>
+                               <td class="fw-bold">$<span id="best-price">1299</span> </td>
                            </tr>
                            <tr>
                                <th scope= "row">Extra Memory Cost</th>
-                               <td class="fw-bold">$<span>0</span> </td>
+                               <td class="fw-bold">$<span id="memory-cost">0</span> </td>
                            </tr>
                            <tr>
                                <th scope= "row">Extra Storage Cost</th>
-                               <td class="fw-bold">$<span>0</span> </td>
+                               <td class="fw-bold">$<span id="ssd-cost">0</span> </td>
                            </tr>
                            <tr>
                                <th scope= "row">Delivery Charge</th>
-                               <td class="fw-bold">$<span>0</span> </td>
+                               <td class="fw-bold">$<span id="delivery-cost">0</span> </td>
                            </tr>
                            <tfoot>
                                <tr>
                                    <th scope= "row">Total Price</th>
-                                   <td class="fw-bold">$<span>1299</span> </td>
+                                   <td class="fw-bold">$<span id="total-cost">1299</span> </td>
                                </tr>
     
                            </tfoot>
@@ -80,8 +80,8 @@
                    <!-- Promo Code -->
                    <div class="mt-4">
                        <h5>Add Promo Code</h5>
-                       <input type="text" name="" placeholder="promo code"  id="">
-                       <button class="btn btn-danger">Apply</button>
+                       <input type="text" name="" placeholder="promo code"  id="promo-word">
+                       <button id="code-btn" class="btn btn-danger">Apply</button>
                    </div>
     
                     
@@ -89,7 +89,7 @@
             </div>
         </section>
         <hr class="container">
-        <h1 class="text-center">Total: $<span>1299</span> </h1>
+        <h1 class="text-center">Total: $<span id="total-price">1299</span> </h1>
     </main>
 
     
