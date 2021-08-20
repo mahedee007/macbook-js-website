@@ -17,8 +17,8 @@ function totalCost(){
     const ssdPrice = document.getElementById('ssd-cost');
     const ssdCost = parseInt(ssdPrice.innerText);
     const deliveryPrice = document.getElementById('delivery-cost');
-    const DeliveryCost = parseInt(deliveryPrice.innerText);
-   const total = bestPrice + memoryCost + ssdCost + DeliveryCost
+    const deliveryCost = parseInt(deliveryPrice.innerText);
+   const total = bestPrice + memoryCost + ssdCost + deliveryCost
    document.getElementById('total-cost').innerText = total;
    document.getElementById('total-price').innerText = total;
 }
