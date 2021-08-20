@@ -1,4 +1,4 @@
-// add On function for memoryCost, storage and delivery
+// add On function for memory cost, storage cost and delivery cost
 
 function addOn(product, price){
     const addOnCost = document.getElementById(product +'-cost');
